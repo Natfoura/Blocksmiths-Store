@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#061b18">
+    <title>Order | Blocksmiths Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER DAN NAVIGASI -->
+    <header class="site-header">
+        <div class="container nav-shell">
+            <a class="brand" href="index.html" aria-label="Blocksmiths Store">
+                <span class="brand-mark">▧</span>
+                <span class="brand-copy">
+                    <strong>BLOCKSMITHS</strong>
+                    <small>STORE</small>
+                </span>
+            </a>
+
+            <button class="menu-toggle"
+                    aria-label="Buka navigasi"
+                    aria-expanded="false"
+                    aria-controls="primary-navigation">
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="primary-navigation" id="primary-navigation">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="about.html">About Us</a>
+                <a class="nav-link" href="catalog.html">Catalog</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link active" href="order.html">Order</a>
+                <a class="nav-cart" href="order.html" aria-label="Buka troli">
+                    🛒 <b data-cart-count>0</b>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- KONTEN UTAMA -->
+    <main class="container page-main">
+
+        <div class="page-heading">
+            <p class="eyebrow">TROLI & PEMESANAN</p>
+            <h1>Keranjang Belanja</h1>
+            <p>
+                Periksa kembali produk yang kamu pilih
+                sebelum membuat ringkasan pesanan.
+            </p>
+        </div>
+
+        <div class="order-layout">
+
+            <!-- DAFTAR PRODUK DALAM TROLI -->
+            <section class="cart-panel">
+                <div class="panel-heading">
+                    <h2>Troli Kamu</h2>
+                    <button type="button" class="text-button" data-clear-cart>
+                        Kosongkan troli
+                    </button>
+                </div>
+
+                <div id="cart-items"></div>
+            </section>
+
+            <!-- RINGKASAN BELANJA -->
+            <aside class="checkout-panel">
+                <h2>Ringkasan Belanja</h2>
+
+                <div class="summary-line">
+                    <span>Jumlah produk</span>
+                    <b data-cart-total-items>0</b>
+                </div>
+
+                <div class="summary-line">
+                    <span>Subtotal</span>
+                    <b data-cart-subtotal>Rp0</b>
+                </div>
+
+                <div class="summary-line total-line">
+                    <span>Total simulasi</span>
+                    <b data-cart-subtotal>Rp0</b>
+                </div>
+
+                <p class="fine-print">
+                    Ini adalah simulasi pemesanan untuk proyek
+                    sekolah. Pembayaran dan pengiriman belum
+                    diproses. Mweheheeheh>;3
+                </p>
+
+                <!-- FORMULIR PEMESANAN -->
+                <form id="checkout-form">
+                    <label>
+                        Nama pemesan
+                        <input id="customer-name" required placeholder="Nama lengkap">
+                    </label>
+
+                    <label>
+                        Nomor WhatsApp
+                        <input id="customer-whatsapp" required inputmode="tel" placeholder="Nomor WhatsApp">
+                    </label>
+
+                    <label>
+                        Catatan pesanan <span>(opsional)</span>
+                        <textarea id="customer-note" rows="3" placeholder="Catatan tambahan"></textarea>
+                    </label>
+
+                    <button class="button button-full" type="submit">
+                        Buat Ringkasan Order →
+                    </button>
+                </form>
+
+                <!-- HASIL PEMESANAN -->
+                <div id="order-result" class="form-result" hidden></div>
+            </aside>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">▧</span>
+                <span class="brand-copy">
+                    <strong>BLOCKSMITHS</strong>
+                    <small>STORE</small>
+                </span>
+            </a>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="catalog.html">Catalog</a>
+                <a href="contact.html">Contact</a>
+                <a href="order.html">Order</a>
+            </nav>
+
+            <p>
+                © <span data-year>2026</span>
+                Blocksmiths Store · Konsep toko figur voxel.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
