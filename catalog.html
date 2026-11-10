@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#061b18">
+
+    <title>Catalog | Blocksmiths Store</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav-shell">
+            <a class="brand" href="index.html" aria-label="Blocksmiths Store">
+                <span class="brand-mark">▧</span>
+                <span class="brand-copy">
+                    <strong>BLOCKSMITHS</strong>
+                    <small>STORE</small>
+                </span>
+            </a>
+
+            <button class="menu-toggle"
+                    aria-label="Buka navigasi"
+                    aria-expanded="false"
+                    aria-controls="primary-navigation">
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="primary-navigation" id="primary-navigation">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="about.html">About Us</a>
+                <a class="nav-link active" href="catalog.html">Catalog</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="order.html">Order</a>
+                <a class="nav-cart" href="order.html" aria-label="Buka troli">
+                    🛒 <b data-cart-count>0</b>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-main">
+        <div class="page-heading">
+            <p class="eyebrow">BLOCKSMITHS STORE</p>
+            <h1>Katalog Produk</h1>
+            <p>
+                Temukan figur favoritmu dan jadikan koleksimu lebih lengkap.
+            </p>
+        </div>
+
+        <div class="catalog-tools">
+            <div class="filter-buttons">
+                <button class="filter-button is-selected" data-filter="all" aria-pressed="true">
+                    Semua
+                </button>
+                <button class="filter-button" data-filter="bundle" aria-pressed="false">
+                    Bundle
+                </button>
+                <button class="filter-button" data-filter="creature" aria-pressed="false">
+                    Mob Figures
+                </button>
+                <button class="filter-button" data-filter="character" aria-pressed="false">
+                    Karakter
+                </button>
+                <button class="filter-button" data-filter="plushie" aria-pressed="false">
+                    Plushies
+                </button>
+            </div>
+
+            <input
+                id="product-search"
+                type="search"
+                placeholder="Cari produk..."
+                aria-label="Cari produk"
+            >
+        </div>
+
+        <div class="product-grid catalog-grid">
+
+            <!-- The Void Expand Pack (SPECIAL EDITION) — FULL WIDTH, PALING ATAS -->
+            <article
+                class="product-card special-edition"
+                data-category="bundle"
+                data-name="the void expand pack"
+            >
+                <span class="special-badge">★ SPECIAL EDITION</span>
+
+                <div class="pack-layout">
+                    <!-- GAMBAR POSTER UTUH -->
+                    <div class="pack-media">
+                        <img
+                            src="assets/product-promo-the-void-expand-pack.webp"
+                            alt="The Void Expand Pack - Void Fiend dan Darktall"
+                        >
+                    </div>
+
+                    <div class="pack-info product-info">
+                        <span class="product-type">Bundle · 4 Item · Special Edition</span>
+                        <h3>The Void Expand Pack</h3>
+                        <p class="pack-desc">
+                            Satu paket lengkap: Darktall, Void Fiend, Plushie Darktall,
+                            dan Plushie Void Fiend. Beli paket, langsung dapat keempatnya!
+                        </p>
+                        <p class="price">Rp 125.000</p>
+                        <small class="price-old">Harga normal Rp 170.000</small>
+                        <small class="bundle-contents">
+                            Isi: Darktall + Void Fiend + Plushie Darktall + Plushie Void Fiend
+                        </small>
+                        <button class="add-to-cart" data-add-cart type="button">
+                            Ambil Bundle 🛒
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Grimseeper -->
+            <article class="product-card" data-category="creature" data-name="grimseeper">
+                <div class="product-art">
+                    <img src="assets/product-grimseeper.webp" alt="Grimseeper bergaya voxel">
+                </div>
+                <div class="product-info">
+                    <span class="product-type">Mob Figure</span>
+                    <h3>Grimseeper</h3>
+                    <p>Rp 20.000</p>
+                    <button class="add-to-cart" data-add-cart type="button">
+                        Tambah ke Troli 🛒
+                    </button>
+                </div>
+            </article>
+
+            <!-- Undead -->
+            <article class="product-card" data-category="creature" data-name="Undead">
+                <div class="product-art">
+                    <img src="assets/product-undead.webp" alt="Undead bergaya voxel">
+                </div>
+                <div class="product-info">
+                    <span class="product-type">Mob Figure</span>
+                    <h3>Undead</h3>
+                    <p>Rp 20.000</p>
+                    <button class="add-to-cart" data-add-cart type="button">
+                        Tambah ke Troli 🛒
+                    </button>
+                </div>
+            </article>
+
+            <!-- Archerdead -->
+            <article class="product-card" data-category="creature" data-name="archerdead">
+                <div class="product-art">
+                    <img src="assets/product-archerdead.webp" alt="Archerdead bergaya voxel">
+                </div>
+                <div class="product-info">
+                    <span class="product-type">Mob Figure</span>
+                    <h3>Archerdead</h3>
+                    <p>Rp 25.000</p>
+                    <button class="add-to-cart" data-add-cart type="button">
+                        Tambah ke Troli 🛒
+                    </button>
+                </div>
+            </article>
+
+            <!-- Void Fiend -->
+            <article class="product-card" data-category="creature" data-name="void-fiend">
+                <div class="product-art">
+                    <img src="assets/product-void-fiend.webp" alt="Void Fiend bergaya voxel">
+                </div>
+                <div class="product-info">
+                    <span class="product-type">Mob Figure</span>
+                    <h3>Void fiend</h3>
+                    <p>Rp 35.000</p>
+                    <button class="add-to-cart" data-add-cart type="button">
+                        Tambah ke Troli 🛒
+                    </button>
+                </div>
+            </article>
+
+            <!-- Steve -->
+            <article class="product-card" data-category="character" data-name="steve">
+                <div class="product-art">
+                    <img src="assets/product-steve.webp" alt="Steve bergaya voxel">
+                </div>
+                <div class="product-info">
+                    <span class="product-type">Karakter</span>
+                    <h3>Steve</h3>
+                    <p>Rp 60.000</p>
+                    <button class="add-to-cart" data-add-cart type="button">
+                        Tambah ke Troli 🛒
+                    </button>
+                </div>
+            </article>
+
+            <!-- Alex -->
+            <article class="product-card" data-category="character" data-name="alex">
+                <div class="product-art">
+                    <img src="assets/product-alex.webp" alt="Alex bergaya voxel">
+                </div>
+                <div class="product-info">
+                    <span class="product-type">Karakter</span>
+                    <h3>Alex</h3>
+                    <p>Rp 25.000</p>
+                    <button class="add-to-cart" data-add-cart type="button">
+                        Tambah ke Troli 🛒
+                    </button>
+                </div>
+            </article>
+
+            <!-- Axolotl -->
+            <article class="product-card" data-category="creature" data-name="axolotl">
+                <div class="product-art">
+                    <img src="assets/product-axolotl.webp" alt="Axolotl bergaya voxel">
+                </div>
+                <div class="product-info">
+                    <span class="product-type">Mob Figure</span>
+                    <h3>Axolotl</h3>
+                    <p>Rp 30.000</p>
+                    <button class="add-to-cart" data-add-cart type="button">
+                        Tambah ke Troli 🛒
+                    </button>
+                </div>
+            </article>
+
+            <!-- Darktall -->
+            <article class="product-card" data-category="creature" data-name="darktall">
+                <div class="product-art">
+                    <img src="assets/product-darktall.webp" alt="Darktall bergaya voxel">
+                </div>
+                <div class="product-info">
+                    <span class="product-type">Mob Figure</span>
+                    <h3>Darktall</h3>
+                    <p>Rp 20.000</p>
+                    <button class="add-to-cart" data-add-cart type="button">
+                        Tambah ke Troli 🛒
+                    </button>
+                </div>
+            </article>
+
+            <!-- Villager -->
+            <article class="product-card" data-category="character" data-name="civillians">
+                <div class="product-art">
+                    <img src="assets/product-civillian.webp" alt="Civillians bergaya voxel">
+                </div>
+                <div class="product-info">
+                    <span class="product-type">Karakter</span>
+                    <h3>Civillians</h3>
+                    <p>Rp 25.000</p>
+                    <button class="add-to-cart" data-add-cart type="button">
+                        Tambah ke Troli 🛒
+                    </button>
+                </div>
+            </article>
+
+            <!-- Rentless Guardian -->
+            <article class="product-card" data-category="creature" data-name="gentless guardian">
+                <div class="product-art">
+                    <img src="assets/product-rentless-guardian.webp" alt="Rentless guardian bergaya voxel">
+                </div>
+                <div class="product-info">
+                    <span class="product-type">Mob Figure</span>
+                    <h3>Rentless guardian</h3>
+                    <p>Rp 25.000</p>
+                    <button class="add-to-cart" data-add-cart type="button">
+                        Tambah ke Troli 🛒
+                    </button>
+                </div>
+            </article>
+
+            <!-- Plushie Creeper -->
+            <article class="product-card" data-category="plushie" data-name="plushie creeper">
+                <div class="product-art">
+                    <img src="assets/product-plush-grimseeper.webp" alt="Plushie Creeper bergaya voxel">
+                </div>
+                <div class="product-info">
+                    <span class="product-type">Plushie</span>
+                    <h3>Plushie Grimseeper</h3>
+                    <p>Rp 50.000</p>
+                    <button class="add-to-cart" data-add-cart type="button">
+                        Tambah ke Troli 🛒
+                    </button>
+                </div>
+            </article>
+
+            <!-- Plushie Axolotl -->
+            <article class="product-card" data-category="plushie" data-name="plushie axolotl">
+                <div class="product-art">
+                    <img src="assets/product-plush-axolotl.webp" alt="Plushie Axolotl bergaya voxel">
+                </div>
+                <div class="product-info">
+                    <span class="product-type">Plushie</span>
+                    <h3>Plushie Axolotl</h3>
+                    <p>Rp 55.000</p>
+                    <button class="add-to-cart" data-add-cart type="button">
+                        Tambah ke Troli 🛒
+                    </button>
+                </div>
+            </article>
+
+            <!-- Plushie Enderman -->
+            <article class="product-card" data-category="plushie" data-name="plushie darktall">
+                <div class="product-art">
+                    <img src="assets/product-plush-darktall.webp" alt="Plushie Darktall bergaya voxel">
+                </div>
+                <div class="product-info">
+                    <span class="product-type">Plushie</span>
+                    <h3>Plushie Darktall</h3>
+                    <p>Rp 50.000</p>
+                    <button class="add-to-cart" data-add-cart type="button">
+                        Tambah ke Troli 🛒
+                    </button>
+                </div>
+            </article>
+
+            <!-- Plushie Dragon -->
+            <article class="product-card" data-category="plushie" data-name="plushie void fiend">
+                <div class="product-art">
+                    <img src="assets/product-plush-void-fiend.webp" alt="Plushie Void Fiend bergaya voxel">
+                </div>
+                <div class="product-info">
+                    <span class="product-type">Plushie</span>
+                    <h3>Plushie Void Fiend</h3>
+                    <p>Rp 65.000</p>
+                    <button class="add-to-cart" data-add-cart type="button">
+                        Tambah ke Troli 🛒
+                    </button>
+                </div>
+            </article>
+
+        </div>
+
+        <p id="filter-empty" hidden>
+            Produk tidak ditemukan. Coba kategori atau kata kunci lain.
+        </p>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">▧</span>
+                <span class="brand-copy">
+                    <strong>BLOCKSMITHS</strong>
+                    <small>STORE</small>
+                </span>
+            </a>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="catalog.html">Catalog</a>
+                <a href="contact.html">Contact</a>
+                <a href="order.html">Order</a>
+            </nav>
+
+            <p>
+                © <span data-year>2026</span>
+                Blocksmiths Store · Konsep toko figur voxel.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

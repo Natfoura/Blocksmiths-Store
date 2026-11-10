@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#061b18">
+    <title>Home | Blocksmiths Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER DAN NAVIGASI -->
+    <header class="site-header">
+        <div class="container nav-shell">
+            <a class="brand" href="index.html" aria-label="Blocksmiths Store">
+                <span class="brand-mark">▧</span>
+                <span class="brand-copy">
+                    <strong>BLOCKSMITHS</strong>
+                    <small>STORE</small>
+                </span>
+            </a>
+
+            <button class="menu-toggle"
+                    aria-label="Buka navigasi"
+                    aria-expanded="false"
+                    aria-controls="primary-navigation">
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="primary-navigation" id="primary-navigation">
+                <a class="nav-link active" href="index.html">Home</a>
+                <a class="nav-link" href="about.html">About Us</a>
+                <a class="nav-link" href="catalog.html">Catalog</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="order.html">Order</a>
+                <a class="nav-cart" href="order.html" aria-label="Buka troli">
+                    🛒 <b data-cart-count>0</b>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- KONTEN UTAMA -->
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">FIGUR • PLUSHIE • KOLEKSI</p>
+                <h1>KOLEKSI FIGUR<br><span>KARAKTER FANTASI VOXEL FAVORITMU</span></h1>
+                <p>Mulai dari makhluk dan karakter bergaya voxel. Semua siap untuk mengisi koleksimu dengan desain yang absolut!</p>
+                <a class="button" href="catalog.html">Lihat Koleksi <span>→</span></a>
+            </div>
+            <div class="hero-scene" aria-label="Lanskap fantasi voxel">
+                <img src="assets/hero-fantasy-landscape.webp" alt="Lanskap fantasi bergaya voxel" class="hero-bg-image">
+                <div class="hero-overlay"></div>
+                <div class="hero-figure">
+                    <img src="assets/product-grimseeper.webp" alt="Figur Grimseeper" class="hero-grimseeper">
+                </div>
+            </div>
+        </section>
+
+        <!-- FITUR TOKO -->
+        <section class="container feature-strip">
+            <div>
+                ⬡
+                <span>
+                    <b>Produk Koleksi</b>
+                    <small>Figur dan plushie</small>
+                </span>
+            </div>
+            <div>
+                ✦
+                <span>
+                    <b>Desain Voxel</b>
+                    <small>Gaya kotak ikonis</small>
+                </span>
+            </div>
+            <div>
+                ▣
+                <span>
+                    <b>Belanja Praktis</b>
+                    <small>Troli terintegrasi</small>
+                </span>
+            </div>
+            <div>
+                ☏
+                <span>
+                    <b>Layanan Pelanggan</b>
+                    <small>Komunikasi via WhatsApp</small>
+                </span>
+            </div>
+        </section>
+
+        <!-- PRODUK UNGGULAN -->
+        <section class="container section">
+            <div class="section-title">
+                <div>
+                    <p class="eyebrow">PRODUK UNGGULAN</p>
+                    <h2>Temukan figur favoritmu</h2>
+                </div>
+                <a class="text-link" href="catalog.html">Lihat semua →</a>
+            </div>
+
+            <div class="product-grid featured-grid">
+
+                <!-- PRODUK THE VOID EXPAND PACK — FULL WIDTH -->
+                <article class="product-card special-edition" data-category="bundle" data-slug="void-expand-pack">
+                    <span class="special-badge">★ SPECIAL EDITION</span>
+
+                    <div class="pack-layout">
+                        <!-- GAMBAR POSTER UTUH -->
+                        <div class="pack-media">
+                            <img
+                                src="assets/product-promo-the-void-expand-pack.webp"
+                                alt="The Void Expand Pack - Void Fiend dan Darktall"
+                            >
+                        </div>
+
+                        <div class="pack-info product-info">
+                            <span class="product-type">Bundle · 4 Item · Special Edition</span>
+                            <h3>The Void Expand Pack</h3>
+                            <p class="pack-desc">
+                                Satu paket lengkap: Darktall, Void Fiend, Plushie Darktall,
+                                dan Plushie Void Fiend. Beli paket, langsung dapat keempatnya!
+                            </p>
+                            <p class="price">Rp 125.000</p>
+                            <small class="price-old">Harga normal Rp 180.000</small>
+                            <small class="bundle-contents">
+                                Isi: Darktall + Void Fiend + Plushie Darktall + Plushie Void Fiend
+                            </small>
+                            <button class="add-to-cart" data-add-cart type="button">
+                                Ambil Bundle 🛒
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PRODUK GRIMSEEPER -->
+                <article class="product-card" data-category="creature" data-slug="grimseeper">
+                    <a class="product-art" href="catalog.html">
+                        <img src="assets/product-grimseeper.webp" alt="Grimseeper bergaya voxel">
+                    </a>
+                    <div class="product-info">
+                        <span class="product-type">CREATURE</span>
+                        <h3>Grimseeper</h3>
+                        <p>Rp 20.000</p>
+                        <button class="add-to-cart" data-add-cart type="button">
+                            Tambah ke Troli 🛒
+                        </button>
+                    </div>
+                </article>
+
+                <!-- PRODUK UNDEAD -->
+                <article class="product-card" data-category="creature" data-slug="Undead">
+                    <a class="product-art" href="catalog.html">
+                        <img src="assets/product-undead.webp" alt="Undead bergaya voxel">
+                    </a>
+                    <div class="product-info">
+                        <span class="product-type">CREATURE</span>
+                        <h3>Undead</h3>
+                        <p>Rp 20.000</p>
+                        <button class="add-to-cart" data-add-cart type="button">
+                            Tambah ke Troli 🛒
+                        </button>
+                    </div>
+                </article>
+
+                <!-- PRODUK ARCHERDEAD -->
+                <article class="product-card" data-category="creature" data-slug="archerdead">
+                    <a class="product-art" href="catalog.html">
+                        <img src="assets/product-archerdead.webp" alt="Archerdead bergaya voxel">
+                    </a>
+                    <div class="product-info">
+                        <span class="product-type">CREATURE</span>
+                        <h3>Archerdead</h3>
+                        <p>Rp 25.000</p>
+                        <button class="add-to-cart" data-add-cart type="button">
+                            Tambah ke Troli 🛒
+                        </button>
+                    </div>
+                </article>
+
+                <!-- PRODUK VOID FIEND -->
+                <article class="product-card" data-category="creature" data-slug="void-fiend">
+                    <a class="product-art" href="catalog.html">
+                        <img src="assets/product-void-fiend.webp" alt="Void fiend bergaya voxel">
+                    </a>
+                    <div class="product-info">
+                        <span class="product-type">CREATURE</span>
+                        <h3>Void Fiend</h3>
+                        <p>Rp 35.000</p>
+                        <button class="add-to-cart" data-add-cart type="button">
+                            Tambah ke Troli 🛒
+                        </button>
+                    </div>
+                </article>
+
+                <!-- PRODUK STEVE -->
+                <article class="product-card" data-category="character" data-slug="steve">
+                    <a class="product-art" href="catalog.html">
+                        <img src="assets/product-steve.webp" alt="Steve bergaya voxel">
+                    </a>
+                    <div class="product-info">
+                        <span class="product-type">CHARACTER</span>
+                        <h3>Steve</h3>
+                        <p>Rp 60.000</p>
+                        <button class="add-to-cart" data-add-cart type="button">
+                            Tambah ke Troli 🛒
+                        </button>
+                    </div>
+                </article>
+
+                <!-- PRODUK ALEX -->
+                <article class="product-card" data-category="character" data-slug="alex">
+                    <a class="product-art" href="catalog.html">
+                        <img src="assets/product-alex.webp" alt="Alex bergaya voxel">
+                    </a>
+                    <div class="product-info">
+                        <span class="product-type">CHARACTER</span>
+                        <h3>Alex</h3>
+                        <p>Rp 25.000</p>
+                        <button class="add-to-cart" data-add-cart type="button">
+                            Tambah ke Troli 🛒
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- BANNER KOLEKSI -->
+        <section class="container bottom-banner">
+            <div>
+                <p class="eyebrow">BANGUN KOLEKSIMU</p>
+                <h2>Setiap karakter punya cerita.</h2>
+                <p>Temukan mob dan karakter favoritmu di Blocksmiths Store.</p>
+                <a class="button" href="catalog.html">Jelajahi katalog →</a>
+            </div>
+            <div class="banner-art">
+                <img src="assets/product-axolotl.webp" alt="Figur Axolotl">
+                <img src="assets/product-darktall.webp" alt="Figur Darktall">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">▧</span>
+                <span class="brand-copy">
+                    <strong>BLOCKSMITHS</strong>
+                    <small>STORE</small>
+                </span>
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="catalog.html">Catalog</a>
+                <a href="contact.html">Contact</a>
+                <a href="order.html">Order</a>
+            </nav>
+            <p>
+                © <span data-year>2026</span>
+                Blocksmiths Store · Toko figur voxel.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
